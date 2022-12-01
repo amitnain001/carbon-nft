@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url(../fonts/Segoe\ UI.ttf)
+}
+
+body {
+    font-family: "Segoe UI";
+}
+
+.font-popins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-blur {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1.5px);
+}
+
+.color-1 {
+    background-color: #0263FF;
+}
+
+.color-2 {
+    background-color: #FF7723;
+}
+
+.color-3 {
+    background-color: #76CFF2;
+}
+
+.color-4 {
+    background-color: #BF020B;
+}
+
+.color-5 {
+    background-color: #8E30FF;
+}
+
+.color-6 {
+    background-color: #65EFA6;
+}
+
+.color-7 {
+    background-color: #E957ED;
+}
+
+.text-gren {
+    color: #33682C;
+}
+
+.bg-gren {
+    background-color: #33682C;
+}
+
+.bg-light-gren {
+    background: #F0FFE6;
+}
+
+.timeline::before {
+    content: ' ';
+    width: 100%;
+    height: 2px;
+    background-color: #33682C;
+    position: absolute;
+    top: -15px;
+}
+
+.items::before {
+    padding: 5px 12px;
+    border-radius: 30px;
+    border: 1px solid #33682C;
+    position: absolute;
+    top: -70px;
+    left: 0px;
+}
+
+.items:hover::before {
+    background-color: #33682C;
+    color: white;
+    font-weight: bold;
+}
+
+.grid-bg-nature {
+    background-image: url(../image/png/nature-1.png);
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.sm-txt {
+    @apply text-lg opacity-60
+}
+
+.onhover:hover {
+    @apply transition-all duration-300 scale-125
+}
+
+@media only screen and (min-width:490px) {
+    .timeline-items-2::before {
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -5px;
+        background: #FFFFFF;
+        border: 1px solid rgba(16, 17, 16, 0.2);
+        left: -110px;
+        transform: translateX(50%);
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .timeline-2::before {
+        content: ' ';
+        height: 100%;
+        width: 2px;
+        background-color: #33682C;
+        position: absolute;
+        left: -57px;
+    }
+
+    .timeline-items-2:hover:before {
+        background: #33682C;
+        border-color: #33682C;
+        color: white
+    }
+}
+
+@tailwind utilities;

@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <title>Project 1</title>
+
+    <link rel="stylesheet" href="/assets/index.f4e8b824.css" />
+  </head>
+
+  <body>
+    <!-- <section  start here"> -->
+    <div class="relative">
+      <nav class="navbar w-full h-full absolute top-0 z-10">
+        <div class="text-white h-full flex flex-col sm:justify-between">
+          <div class="w-full bg-blur">
+            <div class="container mx-auto px-2 sm:px-11 z-10 xl:px-14 2xl:px-0">
+              <div class="flex items-center justify-between lg:py-4">
+                <a href="#">
+                  <img
+                    src="/assets/top-log.e18b9998.png"
+                    class="h-6 sm:h-10 lg:h-20"
+                    alt="image"
+                /></a>
+                <div class="hidden sm:flex">
+                  <a href="https://www.google.com/intl/en-GB/gmail/about/#inbox"
+                    ><img
+                      class="ml-6 onhover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAElSURBVHgB7ZaNDYIwEEavxgEYgRFwAh3BDWQT3ESZQDfADXSD6gSwwXkXStLUtvxYwEReckHh4HsUKAAsLMyMMFcgYkSLA1UCYbkJIXJvB4XHVBLHQ3KGT+CC41PomUIL5yG/wzRs6HI8+MdKW/mkymF8rlSVcyvW98EZw1NQ7XzBCWo3CDernYIGY32CiU0gVTucDJE9DnsyCiM4osqoSs7yCaBqygyRtKOI9AQ3tAroB8ssfdLRe2gJ7i1gPbghwgFHY1vmCB4s4BOJOoyOU2AF/YipzroITSgV1k+MpL8n1dOZvgI2EZ5aC+gZ3LCG74hhYHDD0BEIxt8KlGAReMB0vMAUUO/nG4zPtfkW+ABn+CQTDpGUFlsIC591zhMXLCz8Em+RPdNzT4OdTQAAAABJRU5ErkJggg=="
+                      alt="image"
+                  /></a>
+                  <a href="https://discord.com"
+                    ><img
+                      class="ml-6 onhover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVHgB7ZbRUcMwDIaVHO94g5oNygRkA7IB2YAwAekEwARpJ4ANEiZghHSDhAmEfLY549iuCwnQu3x3urryL1tVZDcACwunBCKuyXhgngkNTLxpRlaT9ShpjDluJkTjrdJ0KiaD70LBubGpTR/p08kcVxX1yzqcjo6MufZKPTncknGYDk5WuiYS24HymXYwPQPZRZIkg+l0VaCCeRCPYFQFVwJXMB/XEEoA5bHhMB9rtI6mXYEc/LRkG7JdQPMCssxtQJN5Zyi7N88xqi3do0NTWZqtZ60mlICPzNIxh4ZbmsyzVm/qUiMgdFsNcJghMoaZyZo9wMDPzYHvgiJCo+F6cOZyOihRXqWiAcUxrRyaB9Ks6PNVacrAeucjDwUX+HsUet8U/obelcDeIxbNtIO4RjRjngIx73rw2QP0J9FSae5oeA9fG1KMkeySTJwUcVmt1JgZG+5BPv9W+XIYN7bQbcRe4APlu4DrEqkhEtI2jnjh47FrmIn0yqKDVayOe8afvJrpBeFIUN6EDBYW/jsfI6iCdAa+OusAAAAASUVORK5CYII="
+                      alt="image"
+                  /></a>
+                  <a href="https://www.google.com/"
+                    ><img
+                      class="ml-6 onhover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIYSURBVHgB5VfhdYJADA59/V86QXEDR2AD3UBHsBOIE+gG0Ak6Au0EugF0Au0EafK40zQEBCyv77Xfe3likku+u9yFA+C/I4ABQMSQfqYkEcnJySEIghOMBUoakaxJCmwG21L2hZ8Cz5Ykw/5IbyZCAWKSI7bPuLhin8MQ0MCFEYwJ5UK3cDoPti2xTmrRN/lcBdiJFfF4Ff650MdOl6gYcdfkkZpBImyZFVAR2wm9JMGlDLsQyKzkzub3Q2GM2/tESr8T8VI97l45R/Qj61WSbumen0j8DA5C7+F7QOiIlz6G8OH9saF+UYIFHHbc+iKROQNFgJc2gnFR0gpMagSw2iC+fu8kmRq4haoEJckGbHgfLsezsnFpY/f8WGvb+H0nr3RkvGzAHBqAl+N4NGwrET/2+jvhI4+I9VLx9k9oxocRy4oZXSPQhmOL7QF6xpAESmgn42cQQTNC5WvZGOdVlH3gIJ5nVKemd/sU6z0ANDnDZ2bl+vVjeKeMLzA+3uQfvQIR/cg+z8fR14tbceKerT7BS+zf/dwnSmGT74BJYyt2JGQ73gp9KHrB3hhXWD0Aq2ucRwrXoBIx1sK2s5qJamJpQ/ICu17RVMAzCaXPhX8uiblJbFWMflczrK5WqGawMJJJP7bNsX4lW8IQNATTpNrsXMoYbgFWV7Sh1/Ku7b0XkQLbVyTBHt8Dt36ahXC5I4z7afZn8QXqzmsvSFQeYQAAAABJRU5ErkJggg=="
+                      alt="image"
+                  /></a>
+                  <a href="https://twitter.com"
+                    ><img
+                      class="ml-6 onhover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFZSURBVHgB7ZbtTcMwEIYvEf/JCO4EZIRsQjagGzQbwAalEzBC2CBlAneDwgQvd7IRJXUcOzZCSHmkV5FPzn04PsdEKyt/TEGZAFDx455Vsz5YQ1EUB9c8tr/7HDUUH/wBbjSrZinWjtWHOBN2FIh1HMLZJlL5nDUXLzwGBFcRwZ9Ye9bW57DG9RIqz/wWcXRzFVUTL+5diYhDhOMMXl4O7O48OOa1LM1OBpillE9VUxyvLuOPNsT3BhlYivKy4QJPY2M5GiuWtMqRMuMKLtyMxiebROzyzjFZUOge+LUErrCdoJGXhmKwSTwjD9oXq5ywSzeAJlonko6WwJn3SEfTUmDOeY00FKUAsxfkuB0Qz5ZyAXP06ojgHaViq5fAfURg+e22tBSYm00Ps+RnxNEj9ZvbJKTq0DNAknzBgmvcF8VcMvy4Y21Yt9YsF05przfW0XvBXFn5D3wCuZzBx2RAR0wAAAAASUVORK5CYII="
+                      alt="image"
+                  /></a>
+                  <a href="https://www.facebook.com"
+                    ><img
+                      class="ml-6 onhover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF/SURBVHgB5ZbRcYMwDIZFrgMwgjpBGYFukE4AG/Q6QdNJoBN0hm6QDcwGSSdQpQNSn2sjY8xTvjtdLhhJv21ZGODeKSABIir5p2JDtutk56IorrAXnBTZ3tkMhZGxTt6FXMhs2XpaT7dZCAeo2S6UjmE7Qgrs2FA+mrXJj7QeQ8v1UccmRyWQjWzPK42nwo5RBt4tYwTEFpyhhSIL+HRacqR4GiVWCLTfe3D8ThDPt5NQlldEVYpfG8xDK/be4/sV6Wtsv4MzA4Q4fC1Xm/kMklWMh4QAOah8AvQjkg+EBAEfxR+P7qA8mwf577MS6+ITMEA+tO38AY+AM+QDlfFbrlsfkMsEV+ew4FzaTYTfH+xBp8E8QZgheHHhIKeUszz5mkjfcDum+Fa8RQDafnYNzMv6CfvRu1v3Dxo/pdotKGUFDHm+ngf3wVQgL5CfN3X2Nqy2zbgCLaRA49XMbBAgW1nDFmg8GX2CgI5irmAJQsyCADHpJQh74ptZ1tneFb+jxHaYvKm/QgAAAABJRU5ErkJggg=="
+                      alt="image"
+                  /></a>
+                  <a href="https://www.instagram.com"
+                    ><img
+                      class="ml-6 onhover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGMSURBVHgB7VZtccMwDFWKoBBcBi2DDcHGoBuChEGvDDoGG4Mx8A1BWwQOg4aBJi3OVefZjj373/LuXnJn2dI7yR8CWPDf0cSMiLimX0t8ICrLFAzEC/FKPDVN00MuKHhLvGEdHHKDH7A+Ol+sxhNc0c9AfXBZNlSOQQ6uPBM7KMcbcUf8EGPrJN+UAZ2YUt4fhnh2DcLX1jFpN54vAwri6ImPMKaTuSNyKV+tDUS9nzJ9/yyOQeN4NENr176MyKyVCDBTcJta7QhTQoQJOSkRsLd2hf77gce2dk5XXYCwawxDiyxUFWDmBFrcxDyTImAF+RigIlIFcN2n3X+JzPvkj52r4C+IpLez9tAmNHg/CS8hJyUCDN6PIYt4t0KYWgRXWHgMY0/weQoUWDt3ESUJMBgH2/cobkQbuE1ZmyJAYzoMzgeVSHqMviAdCvJ2+9Ud8DUknFpOVfDRKcDG7Q9/ZcB2LEeoj2NWc4rjg1KjKWUfwU5ori1XMDYVz0R+6VLL0lvyfjq5feCCBRLf5ICqnhN9uoAAAAAASUVORK5CYII="
+                      alt="image"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      class="ml-6 onhover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABFSURBVHgB7dSxDcAwEMNAJshg8aT2Jh7t7Z9CDQ9Qr4qgsKeqNkF9oAh6CfOA1B34CTJEHvjuFlJQh2gSZAk90CUcSEEHDlAXi8z+IGgAAAAASUVORK5CYII="
+                      alt="image"
+                  /></a>
+                </div>
+                <a class="items-center block sm:hidden">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABFSURBVHgB7dSxDcAwEMNAJshg8aT2Jh7t7Z9CDQ9Qr4qgsKeqNkF9oAh6CfOA1B34CTJEHvjuFlJQh2gSZAk90CUcSEEHDlAXi8z+IGgAAAAASUVORK5CYII="
+                    class="h-6"
+                    alt="image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="container mx-auto sm:mb-24 text-center sm:text-left mt-3 sm:pl-11 sm:mt-14 px-2 xl:px-14 2xl:px-0"
+          >
+            <p
+              class="text-lg font-black sm:w-[310px] sm:text-4xl lg:text-6xl xl:text-7xl lg:w-[610px] lg:leading-normal xl:leading-relaxed"
+            >
+              Buy 1 Carbon Collectible NFT
+            </p>
+            <p
+              class="text-xs font-normal xl:text-2xl sm:w-[310px] lg:w-[610px] sm:my-6"
+            >
+              and receive digital and virtual rights to 1 dedicated hectare of
+              forestry. This includes 5 digital carbon offsets but no physical
+              rights to the land or trees.
+            </p>
+            <button
+              class="p-1 my-2 border-2 bg-white bg-opacity-20 border-white text-xs sm:text-lg sm:px-3 lg:px-16 lg:py-4 hover:text-black hover:bg-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- carousel start from here -->
+      <div class="w-full -z-10 top-0">
+        <div class="logo-slider">
+          <div class="items">
+            <img src="/assets/nature-7.94ac733f.png" alt="image" />
+          </div>
+          <div class="items">
+            <img src="/assets/nature-7.94ac733f.png" alt="image" />
+          </div>
+          <div class="items">
+            <img src="/assets/nature-7.94ac733f.png" alt="image" />
+          </div>
+          <div class="items">
+            <img src="/assets/nature-7.94ac733f.png" alt="image" />
+          </div>
+          <div class="items">
+            <img src="/assets/nature-7.94ac733f.png" alt="image" />
+          </div>
+          <div class="items">
+            <img src="/assets/nature-7.94ac733f.png" alt="image" />
+          </div>
+        </div>
+      </div>
+      <!-- carousel ends here -->
+    </div>
+    <!-- section  ends here -->
+    <!-- section -1 start from here -->
+    <section
+      class="bg-light-gren bottom-2 pt-6 md:pl-10 sm:pl-5 2xl:pl-[100px]"
+    >
+      <div class="text-center sm:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">01</p>
+        </div>
+        <div class="col-span-5 self-center">
+          <p class="font-black mt-8 sm:mt-0 text-3xl lg:text-5xl xl:text-7xl">
+            How to <span class="text-gren">Mint?</span>
+          </p>
+          <p class="sm-txt my-4">We offer up to 20,000 NFTs at $500 each.</p>
+        </div>
+        <div class="self-center col-span-2">
+          <button
+            class="pb-2 pt-1 xl:text-2xl xl:pb-4 xl:pt-2 xl:px-5 px-3 border border-green-900 hover:bg-green-800 mx-1 hover:text-white"
+            id="slideLeft-1"
+            type="button"
+          >
+            &#60;
+          </button>
+          <button
+            class="pb-2 pt-1 xl:text-2xl xl:pb-4 xl:pt-2 xl:px-5 px-3 border border-green-900 hover:bg-green-800 mx-1 hover:text-white"
+            id="slideRight-1"
+            type="button"
+          >
+            &#62;
+          </button>
+        </div>
+      </div>
+      <div class="ml-4 sm:ml-0 sm:grid grid-cols-8 gap-x-2">
+        <div class="container col-start-2 col-span-7">
+          <div
+            class="row-start-2 col-start-2 py-7 my-16 col-span-7"
+            id="cont-1"
+          >
+            <div class="timeline flex relative text-left" id="content-1">
+              <div class="items relative before:content-['1'] w-96">
+                <p class="text-2xl font-bold">Metamask</p>
+                <a href="#" class="text-black sm-txt"
+                  >Download and setup <span>metamask</span></a
+                >
+              </div>
+              <div class="items relative before:content-['2'] w-96">
+                <p class="text-2xl font-bold">Purchase Matic</p>
+                <a href="#" class="text-black sm-txt"
+                  >Purchase Matic from <span>Crypto.com</span></a
+                >
+              </div>
+              <div class="items relative before:content-['3'] w-96">
+                <p class="text-2xl font-bold">Send Matic</p>
+                <a href="#" class="text-black sm-txt"
+                  >Send Matic to your metamask account</a
+                >
+              </div>
+              <div class="items relative before:content-['4'] w-96">
+                <p class="text-2xl font-bold">Open Website</p>
+                <a href="#" class="text-black sm-txt"
+                  >Navigate to our website</a
+                >
+              </div>
+              <div class="items relative before:content-['5'] w-96">
+                <p class="text-2xl font-bold">Metamask</p>
+                <a href="#" class="text-black sm-txt"
+                  >Download and setup <span>metamask</span></a
+                >
+              </div>
+              <div class="items relative before:content-['6'] w-96">
+                <p class="text-2xl font-bold">Purchase Matic</p>
+                <a href="#" class="text-black sm-txt"
+                  >Purchase Matic from <span>Crypto.com</span></a
+                >
+              </div>
+              <div class="items relative before:content-['7'] w-96">
+                <p class="text-2xl font-bold">Send Matic</p>
+                <a href="#" class="text-black sm-txt"
+                  >Send Matic to your metamask account</a
+                >
+              </div>
+              <div class="items relative before:content-['8'] w-96">
+                <p class="text-2xl font-bold">Open Website</p>
+                <a href="#" class="text-black sm-txt"
+                  >Navigate to our website</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- now time line start from here -->
+      <!-- time line ends here -->
+    </section>
+    <!-- section -1 ends here -->
+    <!-- section -2 start from here -->
+    <section class="my-10 sm:my-28 md:pl-10 sm:pl-5 2xl:pl-[100px]">
+      <div class="text-center sm:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">02</p>
+        </div>
+        <div class="col-span-5 self-center">
+          <p class="font-black mt-8 sm:mt-0 text-3xl lg:text-5xl xl:text-7xl">
+            Collabor<span class="text-gren">ations</span>
+          </p>
+        </div>
+      </div>
+      <div class="ml-4 sm:ml-0 sm:grid grid-cols-8 gap-x-2 my-12 mx-3">
+        <div class="container col-start-2 col-span-6">
+          <div class="flex justify-evenly flex-wrap space-x-4 md:space-x-12">
+            <img
+              class="w-14 md:w-[132px] my-3 md:my-12"
+              src="data:image/png;base64,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"
+              alt="image"
+            />
+            <img
+              class="w-14 md:w-[123px] my-3 md:my-12"
+              src="data:image/png;base64,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"
+              alt="image"
+            />
+            <img
+              class="w-14 md:w-[130px] my-3 md:my-12"
+              src="/assets/remove-bg.d595de79.png"
+              alt="image"
+            />
+            <img
+              class="w-14 md:w-[206px] my-3 md:my-12"
+              src="/assets/bootstrap.d70494fd.png"
+              alt="image"
+            />
+            <img
+              class="w-14 md:w-[109px] my-3 md:my-12"
+              src="/assets/androaid.2f0d204a.png"
+              alt="image"
+            />
+            <img
+              class="w-14 md:w-[219px] my-3 md:my-12"
+              src="/assets/white-hat.c1e4d603.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -2 ends   here -->
+
+    <!-- section -3 start from here-->
+    <section class="my-10 sm:my-28 md:pl-10 sm:pl-5 2xl:pl-[100px]">
+      <div class="text-center lg:text-left lg:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">03</p>
+        </div>
+        <div class="col-span-3 self-center">
+          <p class="text-lg text-gren mt-8 sm:mt-0">About Project</p>
+          <p class="font-black mt-1 text-3xl lg:text-5xl xl:text-7xl">
+            The goal of our project is to add equity
+            <span class="text-gren">and inclusion to climate finance</span>
+          </p>
+          <p class="sm-txt my-4 px-3 text-left mx-2 sm:px-0 sm:pr-5 sm:mx-0">
+            Each of our NFTs include digital and virtual rights to 1 dedicated
+            hectare of mature forestry. This includes 5 digital carbon offsets
+            but no physical rights to the land or trees.Our digital carbon
+            offsets represent future carbon sequestration from live trees.Each
+            NFT is an avatar that you can customize for use in games and
+            metaverses. We also provide a satellite navigation app that allows
+            you to zoom in and see the tree cover on your dedicated hectare for
+            transparent provenance. We geolocate sites of interest in our
+            forest, such as waterfalls and caves. This adds physical rarity to
+            your dedicated hectare and to your NFT. We reinvest 15% of the
+            proceeds from this NFT sale into forest management activities and
+            50% into a social innovation studio that funds sustainable and
+            profitable projects in the local community.
+          </p>
+        </div>
+        <div class="col-start-5 col-span-3 mt-7 lg:self-center">
+          <div class="sm:grid grid-cols-8 lg:block">
+            <div class="col-start-2 col-span-6 lg:col-span-full lg:col-start-1">
+              <img
+                src="/assets/nature-12.e37af776.png"
+                class="block mx-auto lg:h-[482px] xl:h-[582px]"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -3 ends here -->
+    <!-- section -4 start from here -->
+    <section class="sm:my-28 md:pl-10 sm:pl-5 my-10 2xl:pl-[100px]">
+      <div class="text-center lg:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">04</p>
+        </div>
+        <div class="col-span-6 self-center my-8 sm:my-0">
+          <img
+            src="/assets/pink-logo.7127e58d.png"
+            class="w-full"
+            alt="image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section -4 ends here -->
+
+    <!-- section -5 start from here -->
+    <section
+      class="bg-light-gren bottom-2 pt-6 md:pl-10 sm:pl-5 my-10 sm:my-28 2xl:pl-[100px]"
+    >
+      <div class="text-center sm:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-center">
+          <p class="md:text-7xl xl:text-[144px]">05</p>
+        </div>
+        <div class="col-span-5 self-center">
+          <p class="text-lg text-gren mt-8">About Project</p>
+          <p class="font-black mt-1 text-3xl lg:text-5xl xl:text-7xl">
+            Traditional carbon offsets are the
+            <span class="text-gren"> problem not the solution.</span>
+          </p>
+        </div>
+        <div class="self-center col-span-2 mt-7 sm:mt-0">
+          <button
+            class="pb-2 pt-1 xl:text-2xl xl:pb-4 xl:pt-2 xl:px-5 px-3 border border-green-900 hover:bg-green-800 mx-1 hover:text-white"
+            id="slideLeft-2"
+            type="button"
+          >
+            &#60;
+          </button>
+          <button
+            class="pb-2 pt-1 xl:text-2xl xl:pb-4 xl:pt-2 xl:px-5 px-3 border border-green-900 hover:bg-green-800 mx-1 hover:text-white"
+            id="slideRight-2"
+            type="button"
+          >
+            &#62;
+          </button>
+        </div>
+      </div>
+      <div class="ml-4 sm:ml-0 sm:grid grid-cols-8 gap-x-2">
+        <div class="container col-start-2 col-span-7">
+          <div
+            class="row-start-2 col-start-2 py-7 my-16 col-span-7"
+            id="cont-2"
+          >
+            <div class="flex relative text-left" id="content-2">
+              <div class="flex space-x-4">
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-2.a20ec815.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    This NFT sale includes up to 20,000 hectares of mature
+                    forestry.
+                  </p>
+                </div>
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-4.1e6998cc.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    Burning fossil fuels emits carbon dioxide into .
+                  </p>
+                </div>
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-9.6166570d.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    Trees are most effective at carbon sequestration when they
+                    are
+                  </p>
+                </div>
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-5.0c9f51fb.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    However, low-income communities are excluded from selling .
+                  </p>
+                </div>
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-2.a20ec815.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    This NFT sale includes up to 20,000 hectares of mature
+                    forestry.
+                  </p>
+                </div>
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-4.1e6998cc.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    Burning fossil fuels emits carbon dioxide into .
+                  </p>
+                </div>
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-9.6166570d.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    Trees are most effective at carbon sequestration when they
+                    are
+                  </p>
+                </div>
+                <div class="w-48 sm:w-[385px]">
+                  <img
+                    src="/assets/nature-5.0c9f51fb.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="sm-txt">
+                    However, low-income communities are excluded from selling .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -5 ends  here -->
+
+    <!-- section -6 start from here -->
+    <section class="my-10 sm:my-28 md:pl-10 sm:pl-5 2xl:pl-[100px]">
+      <div class="text-center sm:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">06</p>
+        </div>
+        <div class="col-span-6 self-center my-8 sm:my-0">
+          <p class="font-black mt-1 text-3xl lg:text-5xl xl:text-7xl">
+            Our <span class="text-gren">Hypothesis</span>
+          </p>
+          <p
+            class="sm-txt xl:w-2/4 my-4 px-3 text-left mx-2 sm:px-0 sm:pr-5 sm:mx-0"
+          >
+            If we increase the value of mature forests in emerging economies,
+            deforestation will decline and land owners will plant new trees for
+            future income.
+          </p>
+        </div>
+      </div>
+      <div class="ml-4 sm:ml-0 sm:grid grid-cols-8 gap-x-2">
+        <div class="container col-start-2 col-span-6">
+          <img src="/assets/nature-8.c3d5bb51.png" class="w-full" alt="image" />
+        </div>
+      </div>
+    </section>
+    <!-- section -6 ends here -->
+
+    <!-- section -7 start from here -->
+    <section
+      class="my-10 sm:my-28 md:pl-10 sm:pl-5 bg-light-gren py-20 2xl:pl-[100px]"
+    >
+      <div class="text-center lg:text-left lg:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">07</p>
+        </div>
+        <div class="col-span-3">
+          <p class="text-lg text-gren mt-8 lg:mt-0">Our Solution</p>
+          <p class="font-black mt-1 text-3xl lg:text-5xl xl:text-7xl">
+            We use blockchain innovations to
+            <span class="text-gren"> disrupt the carbon offset industry</span>
+          </p>
+          <p class="sm-txt my-4 px-3 text-left mx-2 sm:px-0 sm:pr-5 sm:mx-0">
+            Each of our NFTs include digital We use NFTs, satellite imagery,
+            machine learning and artificial intelligence to disrupt the carbon
+            offset industry. We have created a new class of digital carbon
+            offsets that eliminates expensive intermediaries and reduces
+            certification costs to $0. This adds equity and inclusion to climate
+            finance. Also, we track our digital carbon offsets on a blockchain
+            to prevent double counting.
+          </p>
+        </div>
+        <div class="col-span-4">
+          <img src="/assets/earth.96b8eddf.png" class="sm:w-full" alt="image" />
+        </div>
+      </div>
+    </section>
+    <!-- section -7 ends here -->
+
+    <!-- section -8 start from here -->
+    <section class="my-10 sm:my-28 md:pl-10 sm:pl-5 2xl:pl-[100px]">
+      <div class="text-center sm:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">08</p>
+        </div>
+        <div class="col-span-6">
+          <p class="text-lg text-gren mt-8 sm:mt-0">Our Art</p>
+          <p class="font-black mt-1 text-3xl lg:text-5xl xl:text-7xl">
+            We have a free <span class="text-gren"> promotional NFT </span> and
+            a <span class="text-gren"> paid NFT</span> that conveys digital and
+            virtual rights to forestry
+          </p>
+        </div>
+      </div>
+      <div class="sm:grid mx-auto md:mx-0 my-10 grid-cols-8 sm:pr-5 md:pr-10">
+        <div class="container col-start-2 col-span-6">
+          <div class="sm:grid grid-cols-2 gap-x-14">
+            <div class="text-center sm:text-left my-5">
+              <img
+                src="/assets/fox.a43fd8fb.png"
+                class="w-full block"
+                alt="image"
+              />
+              <p class="text-2xl font-semibold my-5">Free Promotional NFT</p>
+              <p class="sm-txt px-2 sm:px-0">
+                The following are samples of the art for our free promotional
+                NFT. We offer up to 20,000 free promotional NFTs (you pay the
+                gas fee in Matic)
+              </p>
+            </div>
+            <div class="text-center sm:text-left my-5">
+              <img
+                src="/assets/elepant.80fdcee3.png"
+                class="w-full block"
+                alt="image"
+              />
+              <p class="text-2xl font-semibold my-5">Free Promotional NFT</p>
+              <p class="sm-txt px-2 sm:px-0">
+                The following are samples of the art for our paid Avatar NFT
+                that buyers can customize by selecting attributes. This mixed
+                reality avatar NFT also conveys digital and virtual rights to 1
+                hectare of forestry. These rights include gaming and meta verse
+                applications as well as real life carbon sequestration.
+              </p>
+              <a
+                href="#"
+                class="text-lg hover:text-green-900 font-semibold my-3 block hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -8 ends  here -->
+
+    <!-- section -9 start from here -->
+    <section
+      class="bottom-2 pt-6 md:pl-10 sm:pl-5 my-10 sm:my-28 2xl:pl-[100px]"
+    >
+      <div class="text-center sm:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl">
+          <p class="md:text-7xl xl:text-[144px]">09</p>
+        </div>
+        <div class="col-span-5 self-center">
+          <p class="font-black mt-1 text-3xl lg:text-5xl xl:text-7xl">
+            NFT Provenance <span class="text-gren">App</span>
+          </p>
+          <p class="sm-txt">
+            Our satellite navigation App provides enhanced provenance and
+            transparency
+          </p>
+        </div>
+        <div class="self-center col-span-2 mt-7 sm:mt-0">
+          <button
+            class="pb-2 pt-1 xl:text-2xl xl:pb-4 xl:pt-2 xl:px-5 px-3 border border-green-900 hover:bg-green-800 mx-1 hover:text-white"
+            id="slideLeft-3"
+            type="button"
+          >
+            &#60;
+          </button>
+          <button
+            class="pb-2 pt-1 xl:text-2xl xl:pb-4 xl:pt-2 xl:px-5 px-3 border border-green-900 hover:bg-green-800 mx-1 hover:text-white"
+            id="slideRight-3"
+            type="button"
+          >
+            &#62;
+          </button>
+        </div>
+      </div>
+      <div class="ml-4 sm:ml-0 sm:grid grid-cols-8 gap-x-2">
+        <div class="container col-start-2 col-span-7">
+          <div
+            class="row-start-2 col-start-2 py-7 my-16 col-span-7"
+            id="cont-3"
+          >
+            <div class="flex relative text-left" id="content-3">
+              <div class="flex space-x-4 lg:space-x-8">
+                <div class="w-36 sm:w-[270px] xl:w-[400px]">
+                  <img
+                    src="/assets/nature-6.e1972907.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="my-2 text-gren font-semibold text-lg sm:text-4xl">
+                    Scarcity
+                  </p>
+                  <p class="sm-txt">
+                    This NFT sale includes up to 20,000 hectares of mature
+                    forestry.
+                  </p>
+                </div>
+                <div class="w-36 sm:w-[270px] xl:w-[400px]">
+                  <img
+                    src="/assets/nature-1.4c4be872.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="my-2 text-gren font-semibold text-lg sm:text-4xl">
+                    Provenance
+                  </p>
+                  <p class="sm-txt">
+                    This NFT sale includes up to 20,000 hectares of mature
+                    forestry.
+                  </p>
+                </div>
+                <div class="w-36 sm:w-[270px] xl:w-[400px]">
+                  <img
+                    src="/assets/nature-3.01a170a7.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="my-2 text-gren font-semibold text-lg sm:text-4xl">
+                    Transparency
+                  </p>
+                  <p class="sm-txt">
+                    Use satellite navigation to zoom in and see the tree cover
+                    on your dedicated hectare of forestry.
+                  </p>
+                </div>
+                <div class="w-36 sm:w-[270px] xl:w-[400px]">
+                  <img
+                    src="/assets/nature-6.e1972907.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="my-2 text-gren font-semibold text-lg sm:text-4xl">
+                    Rarity
+                  </p>
+                  <p class="sm-txt">
+                    Geolocate sites of interest that are close to your dedicated
+                    hectare for physical NFT rarity.
+                  </p>
+                </div>
+                <div class="w-36 sm:w-[270px] xl:w-[400px]">
+                  <img
+                    src="/assets/nature-1.4c4be872.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="my-2 text-gren font-semibold text-lg sm:text-4xl">
+                    Provenance
+                  </p>
+                  <p class="sm-txt">
+                    This NFT sale includes up to 20,000 hectares of mature
+                    forestry.
+                  </p>
+                </div>
+                <div class="w-36 sm:w-[270px] xl:w-[400px]">
+                  <img
+                    src="/assets/nature-3.01a170a7.png"
+                    alt="image"
+                    class="block w-full"
+                  />
+                  <p class="my-2 text-gren font-semibold text-lg sm:text-4xl">
+                    Transparency
+                  </p>
+                  <p class="sm-txt">
+                    Use satellite navigation to zoom in and see the tree cover
+                    on your dedicated hectare of forestry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -9 ends here -->
+
+    <!-- section 10 start from here -->
+    <section
+      class="my-10 sm:my-28 md:pl-10 sm:pl-5 bg-light-gren py-20 2xl:pl-[100px]"
+    >
+      <div class="text-center lg:text-left lg:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">10</p>
+        </div>
+        <div class="col-span-3">
+          <p class="text-lg text-gren mt-8 lg:mt-0">
+            Our Social Innovation Studio
+          </p>
+          <p class="font-black mt-1 text-3xl lg:text-5xl xl:text-7xl">
+            Our social innovation studio transforms disenfranchised
+            <span class="text-gren"> youth into crypto entrepreneurs</span>
+          </p>
+          <p class="sm-txt my-4 px-3 text-left mx-2 sm:px-0 sm:pr-5 sm:mx-0">
+            We solicit challenges and solutions from the local forestry
+            community. Our international crypto community helps the local
+            community leverage blockchain innovations to reimagine sustainable
+            and profitable solutions to legacy challenges. Outcomes include
+            local entrepreneurship, alternative livelihoods, local jobs,
+            economic growth, and hope. Our goal is to transform disenfranchised
+            youth into crypto entrepreneurs.
+          </p>
+        </div>
+        <div class="col-start-5 col-span-3 mt-7 self-start xl:self-center">
+          <div class="sm:grid grid-cols-8 lg:block">
+            <div class="col-start-2 col-span-6 lg:col-span-full lg:col-start-1">
+              <img
+                src="/assets/girl-photo.7704ee44.png"
+                class="block mx-auto lg:h-[482px] xl:h-[582px]"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 10 ends here -->
+
+    <!-- section 11 start from here -->
+    <section class="my-10 sm:my-28 md:pl-10 sm:pl-5 2xl:pl-[100px]">
+      <div class="text-center sm:text-left sm:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">11</p>
+        </div>
+        <div class="col-span-6 py-3">
+          <p class="font-black mt-8 sm:mt-0 text-3xl lg:text-5xl xl:text-7xl">
+            Our <span class="text-gren">Votanomics</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="sm:grid mx-auto md:mx-0 my-5 grid-cols-8 gap-x-2 sm:pr-5 md:pr-10"
+      >
+        <div class="container col-start-2 col-span-6">
+          <div class="lg:grid grid-cols-2 gap-x-14">
+            <div class="text-center sm:text-left my-5">
+              <p class="text-2xl font-semibold my-5">
+                We allow our community to vote on selected decisions
+              </p>
+              <ul class="text-left list-disc px-7 sm-txt">
+                <li>
+                  Each NFT Includes digital and virtual rights to 1 hectare of
+                  forestry, which includes 5 digital carbon offsets, but no
+                  physical rights to the land or trees.
+                </li>
+                <li>We offer up to 20,000 forest rights NFT.</li>
+                <li>
+                  The price of each forest rights NFT is $500 ($10 per digital
+                  carbon offset for 10 years).
+                </li>
+                <li></li>
+                <li>
+                  Also, we have a time limited offer to stake your NFT for 1
+                  year and extend the term by 6 months.
+                </li>
+                <li>
+                  Our NFTs represent future carbon sequestration from live
+                  trees. Mature forests are our best weapon in the ongoing fight
+                  against global warming. Traditional carbon offsets represent
+                  historical carbon, which is yesterday’s fight against global
+                  warming.
+                </li>
+                <li>
+                  Our NFT is a customizable Avatar that you can use in gaming
+                  and metaverse applications.
+                </li>
+                <li>
+                  65% of the proceeds from this NFT sale benefits the local
+                  community
+                </li>
+                <li>15% funds forest management activities</li>
+                <li>50% funds our patented social innovation studio.</li>
+              </ul>
+            </div>
+            <div class="self-center">
+              <div
+                class="flex flex-col md:flex-row justify-between lg:flex-col 2xl:flex-row items-center"
+              >
+                <div><img src="/assets/chart.f2af8e56.png" alt="image" /></div>
+                <div class="space-y-4 mt-8">
+                  <div class="sm-txt flex items-center">
+                    <span class="inline-block mr-4 w-5 h-5 color-1"></span>
+                    <p class="text-center">Discord Members</p>
+                  </div>
+                  <div class="sm-txt flex items-center">
+                    <span class="inline-block mr-4 w-5 h-5 color-2"></span>
+                    <p class="text-center">Free NFT Holders</p>
+                  </div>
+                  <div class="sm-txt flex items-center">
+                    <span class="inline-block mr-4 w-5 h-5 color-3"></span>
+                    <p class="text-center">Treasury</p>
+                  </div>
+                  <div class="sm-txt flex items-center">
+                    <span class="inline-block mr-4 w-5 h-5 color-4"></span>
+                    <p class="text-center">Investors</p>
+                  </div>
+                  <div class="sm-txt flex items-center">
+                    <span class="inline-block mr-4 w-5 h-5 color-5"></span>
+                    <p class="text-center">Paid NFT Holders</p>
+                  </div>
+                  <div class="sm-txt flex items-center">
+                    <span class="inline-block mr-4 w-5 h-5 color-6"></span>
+                    <p class="text-center">Team Members</p>
+                  </div>
+                  <div class="sm-txt flex items-center">
+                    <span class="inline-block mr-4 w-5 h-5 color-7"></span>
+                    <p class="text-center">Contributors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 11 ends here -->
+
+    <!-- section 12 start from here -->
+    <section class="my-10 sm:my-28 md:pl-10 sm:pl-5 2xl:pl-[100px]">
+      <div class="text-center lg:text-left lg:grid grid-cols-8 gap-x-2">
+        <div class="font-black opacity-10 text-6xl self-start">
+          <p class="md:text-7xl xl:text-[144px]">12</p>
+        </div>
+        <div class="col-span-3">
+          <p class="font-black mt-8 lg:mt-0 text-3xl lg:text-5xl xl:text-7xl">
+            Our <span class="text-gren">Roadmap</span>
+          </p>
+          <p
+            class="sm-txt my-4 px-3 text-center lg:text-left mx-2 sm:px-0 sm:pr-5 sm:mx-0"
+          >
+            We plan to evolve our MVP into a Web 3.0 value exchange
+          </p>
+        </div>
+        <div class="col-span-4 flex justify-center my-20 lg:my-0">
+          <div class="main-timeline mt-11">
+            <div class="timeline-2 relative text-left pr-4 sm:pr-0">
+              <div
+                class="timeline-items-2 relative xsm:before:content-['1'] hover:text-green-900 mb-16"
+              >
+                <p class="text-lg mb-2 sm:mb-8">01/10/2022</p>
+                <p class="text-xl sm:text-4xl font-semibold">
+                  Launched our free NFT
+                </p>
+              </div>
+              <div
+                class="timeline-items-2 relative xsm:before:content-['2'] hover:text-green-900 my-16"
+              >
+                <p class="text-lg mb-2 sm:mb-8">01/10/2022</p>
+                <p class="text-xl sm:text-4xl font-semibold">
+                  Launched our free NFT
+                </p>
+              </div>
+              <div
+                class="timeline-items-2 relative xsm:before:content-['3'] hover:text-green-900 my-16"
+              >
+                <p class="text-lg mb-2 sm:mb-8">01/10/2022</p>
+                <p class="text-xl sm:text-4xl font-semibold">
+                  Launched our free NFT
+                </p>
+              </div>
+              <div
+                class="timeline-items-2 relative xsm:before:content-['4'] hover:text-green-900"
+              >
+                <p class="text-lg mb-2 relative timeline-2-item sm:mb-8">
+                  01/10/2022
+                </p>
+                <p
+                  class="text-xl timeline-2-last-item absolute font-semibold sm:text-4xl"
+                >
+                  Launched our free NFT
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 12 ends here -->
+
+    <!-- section 13 start from here -->
+    <div class="container mx-auto my-5 sm:mt-24 font-popins">
+      <a href="#">
+        <img
+          src="/assets/top-log.e18b9998.png"
+          class="block mx-auto"
+          alt="image"
+      /></a>
+      <div class="flex items-center justify-center my-7 space-x-5 sm:my-14">
+        <a
+          href="https://www.google.com/intl/en-GB/gmail/about/#inbox"
+          class="onhover"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWCAYAAADTlvzyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGxSURBVHgB3ZQ9TsMwFMf/zylISAw9QkZUQApfM3ADbgAdQBELcIK2JwAWqMRAewNuQA/ARwaoGMMJ6IAAidqP57ZRUtSCQpsO/Ca/xPbPz/YzoYd36Oad99ltEHsYJ4TG7fljPQ6tzJ9zHTjXErrIBA419GZQfQqVDR3OHWcns5AklLvstLz9gucYdY8JoLVZUnibDiXlOrKGcQXHtCiKe+dYlqS3MV4aIqncVB8aNqC13YL3KWZ7oPbDqr+wwUBJmhsYjT6RTWhKqzwt+4s7BJYD5ZrcpEokXtlb3GJljgnkIh39Iik39TF7QIxDJnOUEMLuc4sJJwbteiRe9gs7shGl38QsV1+BioNEUnz5bh9T7BfGw0MG1e6qD5XoyzCxFRGhHBX3IFHcd6gwFiMxWVIMprwinEpG5fjfQmmQKIVwuNhmEpyErWgRZBfxLfsRhIPF3Rttx/4sSgpzSIVMzKit+PNlacs529KhVDOkFCbEgIs/oDBh/rdQMV6UUTrAhGgbPKvgrGmFDWQN4Sq4aAadLdVoF+0ThYywc2tuH3W9CXovxjrGCVOgZ17r0av0BZFF2YagNizXAAAAAElFTkSuQmCC"
+            alt="image"
+        /></a>
+        <a href="https://discord.com" class="onhover"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKJSURBVHgB7VY7bxNBEJ7ZvQgjCo6Cgoqj42GkCyaSu4RfgCmp7BQIhyZu6ZySirjCiAKngw5+AZcOCSNcJCgdrihocBqUiLsdZnNnx/fYu0RyBEj+mpud983szi7AHHP8T1h6dNN1m9cdk9xtObbWgVPAKlK42yyvEFAdCGsKwZYgPGbf07JqlMzH7t5Qf+XBhU0lsV5p3tJrDwG3+t0dL88/mgSVtRs1UPI1a9gpIcEoxc/ihYKhCOjBp1dfB3DSBHSZJcgPLHZgJqBhUFpYHGwORkmJyFIXtLA+u+Aa6IgDv5UpSTLCv7e+wazBLQrOW9eSVUhVgEvfhrMA74+sKmS1YBnOCILofoo3vdBHbra9j4MQ3TCGIQFFUMux9whgg91sGTUQ3nGvdZk9k4oCWJleJweRofzU+9zdXR2vKo/L+syvx2PDRv/FTjtadngY9Zhbh1SO8RixCiBC5hjVE216HRxa7aSOD34vYdPL8sUVcjMTcJ+YZ7gfqBEUoVSK6fjCYMOnYfo+mSRgKWGDAZaQsVLKc36qtOLX70bMJpB1MPkDyzmmIyhAB7k+WSCkFvfU1q1QYQ/bSR0U+PzO2u2r3ONtUrCsbcAEUhdTCRQDG5xeA/M06ChoCzHfE9+ql8a0gL8AQfBzQh8TNMxSJn3N8tkPvydDqKs6YLJBsT8m5Zj43v8xvLJ0eR8Jq7xTSxPdkB4oDB4KJbe5zofMHXEQO5JFAWEPUb0FJZ6hDN7zL7lsXE0mxuP4af/l7puJ/2Ry0VugnR4i8WGUh0qzzG+J+MRjeAH4q4Po9WRMIJkIER5dIAr9xaRxri1ZX/SZQsFPM4JO0dOs0CGcEi5fOvqRCnPM8a/jDw3Z3qrit0gaAAAAAElFTkSuQmCC"
+            alt="image"
+        /></a>
+        <a href="https://www.google.com/" class="onhover"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPbSURBVHgB7VfBbtNAEJ3ZGBEEEkEcOBJuQFvJJNwJR04NX9BwgXBLv6DpF6SVkEi54HwB4QsIZ5rKUltUcWk4IXEhSCBFwvEwY6/tdWKHFMEJ5pCsd8Yzb3d234wB/nVB+A2xW+WSNblk+4BlRBgj0dgrfnPdndEYzihLA7CbN8sKrA1+pYFA5WwrGvHPYArTbbd7MlrC7a8ByGoLk4s7bLoBZxJylgGyEMDd5mqNCF6xVSkzRLhiVmM52wPrUW0Onx/2IUdUnqL6dGWDAN5EwSUYo73Pw0Fkw/lvK8BHxmsDAv9RBAwEGNEr8XUmANWnt+pA6BhTuwfd4xt6XAt9Q3/4/Li33z0aGKBqCtRIbBnsdvw2+5LdXAqAHDYg1YmexdGwe9QK/AA14nmCXdMmGvsAdflnYG1zXlJpt+zSLwEUoNAOtk47FkeQrGRdAxnplYMONuAArga2Ycy3IQLKqSxMfnRm4+Hs6gtgncbxUvml62zc1oo+Ib5OOyIJXAvVsnIchQq/hIRx4Cl4N8ybYcHc6lNOX0KWINRZV4ccYaBbAYwATfqiMZc0IFoIzKfgHvxl0TtlPGuxG3apUPS+yJixv2WVkzIk6kgewyumtjOdaxt2MOYUbWYErsl4WrSuuDtuQNtxCqyiZ1P04FP/4MWRYzqoPlnthI5wNOweOlkAqs3VOMjBjE3l8UoJFQY6a+LZoK9unALyMbkiiuaLSsyG9BVyxAf6mLY1RKlxYueX4+kYgMqm2wz5kqdQiJdhCVGU+FDJIKJPgYjzYDiv4QDLkCekFxHbGuL7iU9U8S7GZ8CbWC4fQq3H9UpzLe2EomsFNusakCmyteG5nrXhQ7gexypabjJvSLW5xiSUV+v/jMgtMupKmgdY2YO/LGhUU5EUE/rgOUzFW5AgavF91vlKqDiHJ9aFIbU+oWJIM6o0KTOA0lJtrjhR98McvrO/dxgQSkBU571TuWIczN3fO74z895pWP9hPNw7uhLNV5qrW3EN4S5p2D02+4f5ajidnGtFp5iQWuJAxq7jjnllvXAebbO+h2MOHqLuZwWX3M+uPhOABOJO52H0LA4iEIqbkGiegoIzP2am7EkfWXmy1kGj6CD6m1n9YW5PWGne5u5XGdVQ+jt2SNgATbfSogmrGXYD5pBdUH7H5AvFbdq77nsnK87CprT6eK1O7Gxh0xm6ydQzdYx51x6azcusFGCBfBp+Prl29+prbjz5UKE9byGMiTkUTo5/4fuDg2cfTmCBnOnDRBoWzve9vB3hDmrElN7z+Dr/sQ+TTDD600wqqBQxqSO/+2n2X34Cz4WXGJMeEukAAAAASUVORK5CYII="
+            alt="image"
+        /></a>
+        <a href="https://twitter.com" class="onhover"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJiSURBVHgB7ZbBbtNAEIZndg1YUAnfQOLi3pAIwiV9gOQJKE+QcmpubZ8g7hMQTphTkyeAI7eGM20wUgrcEm4ckHAlBElle5gtURUn3mSjWkJI+Q6JvDue+Xc8O7sAK1b8YxAKwttzHfl7rQZIHgCdAeKHk5en7Vk7zwmbYaQVsFkvVY6DXgeWoLxT2mVPzdkZGoiEnkqZRudg1ThY5SToVSctMgK8bc+RdvyDAPxu0DsAAx7XSw124i+yI4IoxXgD7GEUNgeXGRCTRpYde2NV/ubOw+eLnHr1+65JcODg/NuWIBtydOvJ5FRGQCzSS2WEtFeuP+irIDq/AkQFTEBwEGEXAb9O10VGAPy6Pph605Vg9VnIYa4QEh4Ywpk64Nryc8azcLAWD9fynBBCiJS+QxBvMEmjRIotdtAAMwHVvOLOFiFvJRjajgB5xOlyoUASiNfD4Mtgejz7Cc5vugKt10gYQsHkBVdYmSeuAbwRu5wX429rAhFpF5TJQNi66FBtKBjeAWYCFMnI8ok7GBQpALBtLEBlIR1e2+DEFZIJtZh5rV3kjtpDBy52HWlfNIXT78+d102U66Uj/qvAFVCr7wan6/NshG6C9+2zq9ZCCkl1kY3UTXw7/h7dKd1rSysd8UmmevldWAJMab/76vPbhXZggLojcDYO1dlgYq/r+xrbfFRbtoZrHv3t9RUwQJ35EtP998GnFhiSETC+2WyROj5TUB3RAXM6qm50LddIgGKc7m3diTiJWjEK6CDBi2WvcVoBM2IIHnFF8VbC2+OwZ3wP6HNRfoztn+Hk9WrFiv+SP6DK4w/msXtlAAAAAElFTkSuQmCC"
+            alt="image"
+        /></a>
+        <a href="https://www.facebook.com" class="onhover"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK7SURBVHgB7ZY/b9NAFMDf2a6UiAxZWJicDQRIRgWJrc03aDe2hC1MpN/A/QSkU10Y6n6Chk+QsCG1iYwSCluzMTAQpEhYin3Huzh/bOfsXBIz0Z+U+M53fu/de3fvHsD/DoENMOp6UXMLBgWiEwJDwtjQy40cpzEYwppIG2DUHuoKaBX8pEqA6eJZbIB/bR/8Y8f6PpAQu9oAvlrVvdfAqRVYC2bLGJJqwPPak33G4BJnFWEj0CNEOeqc9ppJM9Skgd03j7m7m6g8BxtDuOGvHry4P/hx/fOLcIZY+aMDYOolrAEDMggarEgEHkNF5Wur3xa8j8I3mwpqC4d0WKWU4QkAMP386CJ8AoJ9U/gVs3Do57WS03AiJ0WJC0XlppRyjC8l3rPOWf8kfvyExxG9orrjd/HXEQP46mV3O7rZlD1qoa+qgY4FWrgTrF4On/mfwv2J2/8UKkCYkfYd5pIqPkyhAcgeyIDxdM6iq0fl5+jmg1WpBZNYJWzAPARG1SjKxD6QwgQxJgZIQXSjbhSXDNBynqSA7dHcha65AYySDbPd+lCg+qw93wNMgWJa9BjAcdfqm0njHatXmrUnKRyglTRXYTDPEcqiMbnJMoHS9JOA98Pvhd4pnqs5kBWE6GnDXm6hK+L13drTW0i86+nJDtDGrPc5loRehhLMGLRzfOyLpPAM2rW+zsOlxAYvIBHlLQq+DX7qUnzHsNOajScp5+CK2xGp4Q4Fz4Z/DC9SIMmAILeneWFbmB2/P5ZuQ9/dqfNUC1mrxtjHVy80wLGdId50h5AxhNAj0e2piCbzyoUBfQ0ZoaCszum3pngsga51YwMlh2yLBDWtmMpXXFaicSl03veaFPzyZhuT2TQ/KonqwDAarGAaN17JmLxgwRy/l3Rn8MKUgP9R8cG++nCTXWaNw6sfmXd3yPAXX80RMCGQ4iUAAAAASUVORK5CYII="
+            alt="image"
+        /></a>
+        <a href="https://www.instagram.com" class="onhover"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALaSURBVHgB7VY/T9tAFP/d2RVBYqADA5vZqkJVA6Lq1rB1Az5BYWhLJ7J2ImxsNVMTdWj4BKWfILAhlQSjBtSt2UBiCVJoHbB9fWfTNInt5Npka36LpXfP7/3u3fsHDPG/g3U7NDPGOHfGNkgpLcAMBmFABQI1smwD/okH37Jz36r4WwLzr2c26JMljXH0CUF2yrnKVtyZFiecW5/ZZAzb5DyFAUBGcHJu4uq8dHkYc9YOc/2BoUH/jkGDnsUb1adsy661inmnHhd6Bv1jh3v+LN1vtymhp+SOG7EdIUChfwwFCLoRJWaVvnbnWSlXyXz5cGZ73LPabAPPehIgNQPdHENUydCiP1qfKue+TpXzlVlyyAT8NXkmdeZeTQc35T5f6vjbiHjrFMyvzwgkY99L1Vdsq1qLOzRXzXE+4hYpiibi2ddK+cr9VpEORcjb+anrwLn58qGpafwdidNNYnDX7JxdJRKLPHV7zMCMiJGYkuZQBN0qGziXVcJ5scW5RFoT+vECEbMLlOU+dlTtKhMovT8NMppK9GNscyKZH0YF/s29AhShSCBMrjukk9XCtw+iQBWCwRFoc1LDAKFIgBlmxgzDzqJ1/0dN7MmPrAYoDi7lCPAft6vyK7M9LgqySjx4wcDhqZtlKEK9Cjg2ZBTkaPWYS21W7AbdMCSz78NblGeySqgEN1XtRvtAOMtjRjAzeMMtkoOVu/m+2qkh9we9oX0Sghn4ZwKM0Y1E7A5A/dbUoBXn30xnvZHrz787onSs/Rx7AUdk5OKCRLRVUwKBUMlAIsiBQEFzxmhveFQNJA4lXNDUuy5YiCvNSA7QIDiAIuSKprymhbZP0IuA7+jWoGu9aRuu1SmLrGQX9oUz+WSiQZn8HAMEPc5WOXe215OAxPnR5eHkwsQVE+xpv3uhLFMuxNuj/Ok24oklI5h8Ql8irWUyZDLFDVluSixcXA7cVN1K2h+GGELiF1YNFtyD8XrPAAAAAElFTkSuQmCC"
+            alt="image"
+        /></a>
+      </div>
+      <a href="#">
+        <p
+          class="sm-txt text-center mb-7 transition-all duration-300 hover:text-red-600"
+        >
+          Terms & Conditions | Privacy Policy & Cookies
+        </p>
+      </a>
+      <p class="sm-txt text-center mb-7">&copy; 2022.All rights reserved</p>
+    </div>
+    <!-- section 13 ends here -->
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $('.logo-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // dots: true,
+      // arrows: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      infinite: true,
+    });
+
+    const buttonRight = document.getElementById('slideRight-1');
+    const buttonLeft = document.getElementById('slideLeft-1');
+
+    buttonRight.onclick = function () {
+      document.getElementById('cont-1').scrollLeft += 380;
+    };
+    buttonLeft.onclick = function () {
+      document.getElementById('cont-1').scrollLeft -= 380;
+    };
+
+    // second slider start from here
+    const buttonRight2 = document.getElementById('slideRight-2');
+    const buttonLeft2 = document.getElementById('slideLeft-2');
+
+    buttonRight2.onclick = function () {
+      document.getElementById('cont-2').scrollLeft += 380;
+    };
+    buttonLeft2.onclick = function () {
+      document.getElementById('cont-2').scrollLeft -= 380;
+    };
+
+    // 3rd slider start from here
+    const buttonRight3 = document.getElementById('slideRight-3');
+    const buttonLeft3 = document.getElementById('slideLeft-3');
+
+    buttonRight3.onclick = function () {
+      document.getElementById('cont-3').scrollLeft += 380;
+    };
+    buttonLeft3.onclick = function () {
+      document.getElementById('cont-3').scrollLeft -= 380;
+    };
+  </script>
+</html>
